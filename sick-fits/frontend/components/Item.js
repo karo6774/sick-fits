@@ -5,6 +5,7 @@ import Title from "./styles/Title";
 import PriceTag from "./styles/PriceTag";
 import formatMoney from "../lib/format-money";
 import {endpoint} from "../config";
+import DeleteItem from "./DeleteItem";
 
 const Item = ({item}) => (
     <ItemStyles>
@@ -30,7 +31,7 @@ const Item = ({item}) => (
                 <a>Edit</a>
             </Link>
             <button>Add to Cart</button>
-            <button>Delete</button>
+            <DeleteItem id={item.id}>Delete</DeleteItem>
         </div>
     </ItemStyles>
 );
