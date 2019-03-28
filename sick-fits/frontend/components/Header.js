@@ -31,7 +31,7 @@ a {
 }
   
 @media(max-width: 1300px) {
-  margin: 0;
+  margin: 0 5px;
   text-align: center;
 }
 `;
